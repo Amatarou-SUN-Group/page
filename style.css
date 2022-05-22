@@ -1,0 +1,17 @@
+.contents {
+    margin: 16px;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+* {
+    font-family: Ubuntu, sans-serif;
+}
+
+div.links {
+    text-align: right;
+    margin: 0px;
+    line-height: 64px;
+}
