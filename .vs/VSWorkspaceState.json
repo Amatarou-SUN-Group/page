@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\contents",
+    "\\contents\\dk",
+    "\\contents\\en",
+    "\\contents\\jp",
+    "\\terms"
   ],
-  "SelectedNode": "\\C:\\Users\\amata\\Source\\Repos\\page",
+  "SelectedNode": "\\contents\\en\\index.html",
   "PreviewInSolutionExplorer": false
 }
