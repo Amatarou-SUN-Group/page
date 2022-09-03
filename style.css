@@ -2,12 +2,16 @@
     margin: 16px;
 }
 
+.nomargin {
+    margin: 0px;
+}
+
 span.bold {
     font-weight: bold;
 }
 
 * {
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Segoe UI', Ubuntu, sans-serif;
 }
 
 div.links {
@@ -26,6 +30,7 @@ div.links {
     position: absolute;
     top: 50%;
     left: 50%;
+    width : 59%;
     transform: translate(-50%, -50%);
 }
 

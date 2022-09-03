@@ -2,11 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\contents",
+    "\\contents\\content",
     "\\contents\\dk",
     "\\contents\\en",
-    "\\contents\\jp",
-    "\\terms"
+    "\\contents\\menu"
   ],
-  "SelectedNode": "\\contents\\en\\index.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
