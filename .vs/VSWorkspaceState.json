@@ -3,10 +3,14 @@
     "",
     "\\contents",
     "\\contents\\content",
-    "\\contents\\dk",
-    "\\contents\\en",
-    "\\contents\\menu"
+    "\\contents\\content\\dk",
+    "\\contents\\content\\dk\\downloads",
+    "\\contents\\content\\dk\\downloads\\string_ext",
+    "\\contents\\content\\jp",
+    "\\contents\\content\\jp\\downloads",
+    "\\contents\\content\\jp\\downloads\\string_ext",
+    "\\contents\\en"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\contents\\content\\jp\\downloads\\string_ext\\index.html",
   "PreviewInSolutionExplorer": false
 }

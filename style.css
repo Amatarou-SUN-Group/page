@@ -11,7 +11,7 @@ span.bold {
 }
 
 * {
-    font-family: 'Segoe UI', Ubuntu, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Grande', Ubuntu, sans-serif;
 }
 
 div.links {
@@ -30,10 +30,14 @@ div.links {
     position: absolute;
     top: 50%;
     left: 50%;
-    width : 59%;
+    width : 50%;
     transform: translate(-50%, -50%);
 }
 
 .logotxt {
     font-size : 64px;
+}
+
+button {
+    
 }
