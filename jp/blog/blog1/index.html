@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <meta charset="UTF-8">
+        <title>ubuntuでForgeのインストーラを実行する方法 - Amatarou-SUN-Group</title>
+    </head>
+    <body>
+        <div class="content"><!--style="position: absolute; top:64px; left: 0px; width: 100%; height: calc(100% - 64px)">-->
+            <h1>ubuntuでForgeのインストーラを実行する方法</h1><br>
+            筆者 : Amatarou-SUN<br>
+            <br>
+            みなさんubuntuでもmod入れてマイクラしたいですよね?<br>
+            でも少し引っかかる点があると思うのでそこの対処法を少し書きたいと思います。<br>
+            注意 : 筆者はLinux初心者です。自己責任でお願いします。<br>
+            <br>
+            Forgeのjarをダウンロードするところまでは普通に問題なくできます。<br>
+            ただダウンロードしたファイルを実行しようとするとこのようなエラーが出ます。<br>
+            <img src="Screenshot from 2022-12-26 03-00-08.png"/><br>
+            このエラーはforgeのjarを実行可能ファイルとしてマークすることで解決できます。<br>
+            ただ、そのようなGUI環境ではできないのでCUI環境を使って行います。<br>
+            <br>
+            chmodコマンドを使い権限やマークをいじります。<br>
+            ちなみにマーク操作前のマークはこんな感じです。<br>
+            -rw-rw-r--<br>
+            ↑xがない!!! (実行可能としてマークされてない)<br>
+            <br>
+            エラーを解決するコマンド (実行可能としてマークするコマンド) はこちらです。<br>
+            chmod +x (Forgeのファイル名)<br>
+            +xで実行可能というマークを追加しているだけのコマンドです。<br>
+            <br>
+            これを行うことで、普通にForgeのインストーラを実行できます<br>
+            <a href="https://forms.gle/RH1Pn8HqcTMtgdwq9">このサイトは役立ちましたか? (Google Forms)</a>
+        </div>
+        <iframe src="/jp/common/header.html" class="header"></iframe>
+        <iframe src="/jp/common/menu.html" class="menu" style="display: none" id="menu"></iframe>
+    </body>
+</html>

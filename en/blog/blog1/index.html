@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <meta charset="UTF-8">
+        <title>How to run Forge installer on ubuntu - Amatarou-SUN-Group</title>
+    </head>
+    <body>
+        <div class="content"><!--style="position: absolute; top:64px; left: 0px; width: 100%; height: calc(100% - 64px)">-->
+            <h1>How to run Forge installer on ubuntu</h1><br>
+            writer : Amatarou-SUN<br>
+            <br>
+            Everyone wants to install mods on ubuntu and play minecraft, right?<br>
+            But I think that there is a point where it gets caught a little, so I would like to write a little about how to deal with it.<br>
+            Note: I'm beginner to Linux. Please self-responsibility.<br>
+            <br>
+            Up to the point of downloading Forge's jar, there is no problem normally.<br>
+            But I get this error when I try to run the downloaded file.<br>
+            <img src="Screenshot from 2022-12-26 03-00-08.png"/><br>
+            This error can be resolved by marking the forge jar as executable.<br>
+            However, it is not possible in such a GUI environment, so we will use the CUI environment.<br>
+            <br>
+            Use the chmod command to change permissions and marks.<br>
+            By the way, the mark before mark operation is like this.<br>
+            -rw-rw-r--<br>
+            ↑x flag is not exist!!! (not marked as executable)<br>
+            <br>
+            Here is the command to resolve the error (mark it as executable).<br>
+            chmod +x (File Name)<br>
+            It's just a command that is marked as executable with "+x".<br>
+            <br>
+            By doing this, you can run the Forge installer normally<br>
+            <a href="https://forms.gle/RH1Pn8HqcTMtgdwq9">Did this website help you? (Google Forms) *Sorry, English version is not exist. Please translate yourself.</a>
+        </div>
+        <iframe src="/en/common/header.html" class="header"></iframe>
+        <iframe src="/en/common/menu.html" class="menu" style="display: none" id="menu"></iframe>
+    </body>
+</html>

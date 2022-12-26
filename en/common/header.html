@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <meta charset="UTF-8">
+    </head>
+    <body style="background-color:#e0e0e0;">
+        <button style="position: fixed; left: 0px; top: 0px; width: 128px; height: 64px;" onclick="toggle_sh()" id="menubtn">Menu</button>
+        <img style="position: fixed; left: calc(128px + 26px); top: 0px; width: 256px; height: 64px; " src="/amataroulogo_texti.png" onclick='window.parent.location.href = "/en/index.html"'>
+        <button style="position: fixed; right: 128px; top: 0px; width: 128px; height: 64px;" onclick='window.parent.location.href = "/jp/index.html"' id="menubtn">日本語</button>
+        <button style="position: fixed; right: 0px; top: 0px; width: 128px; height: 64px;" onclick='window.parent.location.href = "/en/index.html"' id="menubtn">English</button>
+    </body>
+    <script language="JavaScript" type="text/javascript">
+        var omenu = window.parent.document.getElementById("menu");
+        var omenub = document.getElementById("menubtn");
+        var isopen = 0;
+
+        function toggle_sh()
+        {
+            if (isopen == 1)
+            {
+                omenu.style.display = "none"
+                omenub.textContent = "Menu"
+                isopen = 0;
+            }
+            else
+            {
+                omenu.style.display = ""
+                omenub.textContent = "Close Menu"
+                isopen = 1;
+            }
+        }
+    </script>
+</html>
