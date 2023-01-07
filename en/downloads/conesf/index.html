@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/page/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <meta charset="UTF-8">
+        <title>ConESF</title>
+    </head>
+    <body>
+        <div class="content">
+            <h1>Console Escape Sequence Functions Pack - C++</h1><br>
+            <h2>About</h2><br>
+            A header file that makes it easy to qualify the console with escape sequences.<br>
+            It currently supports normal colors (8 colors), extended colors (256 colors), bold, italic, and underline.<br>
+            <br>
+            [caution]<br>
+            Not finished yet.<br>
+            Incomplete.<br>
+            <a href="./conesf.hpp" download="conesf.hpp">Download</a><br>
+            <a href="./conesf.hpp">look inside</a><br>
+            <h2>List of features</h2><br>
+            [Variables and constant values]<br>
+            CON_RED : Console Color (8 color) - Red<br>
+            CON_YELLOW : Console Color (8 color) - Yellow<br>
+            CON_GREEN : Console Color (8 color) - Green<br>
+            CON_CYAN : Console Color (8 color) - Cyan<br>
+            CON_BLUE : Console Color (8 color) - Blue<br>
+            CON_MAGENTA : Console Color (8 color) - Magenta<br>
+            CON_WHITE : Console Color (8 color) - White<br>
+            CON_BLACK : Console Color (8 color) - Black<br>
+            CON_DEFAULT : Console Color (8 color) - Default color<br>
+            <br>
+            nowfore : (int) Now foreground color<br>
+            nowback : (int) Now background color<br>
+            <br>
+            extended_color_b : (bool) Is Background Color Extended<br>
+            extended_color_f : (bool) Is Foreground Color Extended<br>
+            <br>
+            bold : (bool) Is Bold enabled (get, set)<br>
+            italic : (bool) Is Italic enabled (get, set)<br>
+            underline : (bool) Is Underline enabled (get, set)<br>
+            st : (bool) Is StrikeThrough enabled (get, set)<br>
+            <br>
+            [Functions]<br>
+            applystyle() : Apply Styles and Colors<br>
+            Set_Forecolor(color) : Set Foreground Color + Apply<br>
+            Set_Backcolor(color) : Set Background Color + Apply<br>
+            Set_ForecolorEx(color) : Set Foreground Color (Extended Color 256 colors) + Apply<br>
+            Set_BackcolorEx(color) : Set Background Color (Extended Color 256 colors) + Apply<br>
+            Set_Bold(bool) : Enable/disable Bold + Apply<br>
+            Set_Italic(bool) : Enable/disable Italic + Apply<br>
+            Set_Underline(bool) : Enable/disable Underline + Apply<br>
+            Set_St(bool) : Enable/disable StrikeThrough + Apply<br>
+            Set_Styles(bold, italic, underline, st) : Style it all at once + Apply<br>
+            Reset_Forecolor() : Reset Foreground Color + Apply<br>
+            Reset_Backcolor() : Reset Foreground Color + Apply<br>
+            Reset_Colors() : Reset Foreground and Background Color + Apply<br>
+            Reset_Styles() : Reset Styles + Apply<br>
+            Reset_All() : Reset All (Styles and Colors) + Apply<br>
+            Set_CursorPos(x, y) : Set Console Cursor Position by absolute coordinate<br>
+            Clear_Console() : Clear the Console<br>
+            putstatus_to_console() : Output Color and Style Status to the Console<br>
+        </div>
+        <iframe src="/page/en/common/header.html" class="header"></iframe>
+        <iframe src="/page/en/common/menu.html" class="menu" style="display: none" id="menu"></iframe>
+    </body>
+</html>

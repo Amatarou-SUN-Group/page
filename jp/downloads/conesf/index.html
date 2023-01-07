@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/page/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <meta charset="UTF-8">
+        <title>ConESF</title>
+    </head>
+    <body>
+        <div class="content">
+            <h1>エスケープシーケンス関数パック - C++</h1><br>
+            <h2>概要</h2><br>
+            簡単にコンソールをエスケープシーケンスで修飾できるようにするヘッダファイルです。<br>
+            現在 標準色 (8色), 拡張色 (256色),太字, 斜字,下線に対応しています。<br>
+            <br>
+            [注意]<br>
+            まだ完成していません。 <br>
+            不完全です。<br>
+            <a href="./conesf.hpp" download="conesf.hpp">ダウンロード</a><br>
+            <a href="./conesf.hpp">内側を見る</a><br>
+            <h2>機能一覧</h2><br>
+            [変数, 定数]<br>
+            CON_RED : コンソールの色 (8色) - 赤<br>
+            CON_YELLOW : コンソールの色 (8色) - 黄色<br>
+            CON_GREEN : コンソールの色 (8色) - 緑色<br>
+            CON_CYAN : コンソールの色 (8色) - 水色<br>
+            CON_BLUE : コンソールの色 (8色) - 青色<br>
+            CON_MAGENTA : コンソールの色 (8色) - 紫色<br>
+            CON_WHITE : コンソールの色 (8色) - 白色<br>
+            CON_BLACK : コンソールの色 (8色) - 黒色<br>
+            CON_DEFAULT : コンソールの色 (8色) - 既定色<br>
+            <br>
+            nowfore : (int) 今の文字色<br>
+            nowback : (int) 今の文字背景色<br>
+            <br>
+            extended_color_b : (bool) 背景色の色は拡張されてるか?<br>
+            extended_color_f : (bool) 文字色の色は拡張されてるか?<br>
+            <br>
+            bold : (bool) 太字は有効か? (取得, 設定)<br>
+            italic : (bool) 斜字は有効か? (取得, 設定)<br>
+            underline : (bool) 下線は有効か? (取得, 設定)<br>
+            st : (bool) 取消線は有効か? (取得, 設定)<br>
+            <br>
+            [関数]<br>
+            applystyle() : スタイル・色を適用<br>
+            Set_Forecolor(color) : 文字色を設定 + 適用<br>
+            Set_Backcolor(color) : 文字背景色を設定 + 適用<br>
+            Set_ForecolorEx(color) : 文字色を設定 - 色拡張 (256色) + 適用<br>
+            Set_BackcolorEx(color) : 文字背景色を設定 - 色拡張 (256色) + 適用<br>
+            Set_Bold(bool) : 太字の有効・無効を設定 + 適用<br>
+            Set_Italic(bool) : 斜字の有効・無効を設定 + 適用<br>
+            Set_Underline(bool) : 下線の有効・無効を設定 + 適用<br>
+            Set_St(bool) : 取消線の有効・無効を設定 + 適用<br>
+            Set_Styles(bold, italic, underline, st) : スタイルの一気設定 + 適用<br>
+            Reset_Forecolor() : 文字色をリセット + 適用<br>
+            Reset_Backcolor() : 文字背景色をリセット + 適用<br>
+            Reset_Colors() : 文字色, 文字背景色をリセット + 適用<br>
+            Reset_Styles() : スタイルのリセット<br>
+            Reset_All() : 色, スタイルをすべてリセット<br>
+            Set_CursorPos(x, y) : カーソルの位置を絶対座標で指定 (横 : x, 縦 : y)<br>
+            Clear_Console() : コンソールをクリア<br>
+            putstatus_to_console() : 現在の情報をコンソールに出力<br>
+        </div>
+        <iframe src="/page/jp/common/header.html" class="header"></iframe>
+        <iframe src="/page/jp/common/menu.html" class="menu" style="display: none" id="menu"></iframe>
+    </body>
+</html>
